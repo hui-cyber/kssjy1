@@ -6,14 +6,14 @@ using namespace std;
 class Vehicle
 {
 private:
-    int id;                   // ³µÁ¾ ID
-    int speed;                // ³µÁ¾ËÙ¶È
-    int position;             // ³µÁ¾Î»ÖÃ
-    int maxSpeed;             // ³µÁ¾×î´óËÙ¶È
-    int acceleration;         // ³µÁ¾¼ÓËÙ¶È
-    bool isStopped;           // ³µÁ¾ÊÇ·ñÍ£Ö¹
-    std::string direction;    // ³µÁ¾ÐÐÊ»·½Ïò
-    int lane;                 // ³µÁ¾ËùÔÚ³µµÀ
+    int id;                   // ä»€ä¹ˆid
+    int speed;                // ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½
+    int position;             // ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½
+    int maxSpeed;             // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½
+    int acceleration;         // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½
+    bool isStopped;           // ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Í£Ö¹
+    std::string direction;    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê»ï¿½ï¿½ï¿½ï¿½
+    int lane;                 // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú³ï¿½ï¿½ï¿½
 public:
     Vehicle(int i, int maxSpd = 5, int accel = 1, const std::string& dir = "forward",int ln=0)
     {
@@ -27,49 +27,49 @@ public:
         lane=ln; 
     }
 
-    // »ñÈ¡³µÁ¾ ID
+    // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ ID
     int getId() 
     {
         return id;
     }
 
-    // »ñÈ¡³µÁ¾µ±Ç°ËÙ¶È
+    // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°ï¿½Ù¶ï¿½
     int getSpeed() 
     {
         return speed;
     }
 
-    // »ñÈ¡³µÁ¾µ±Ç°Î»ÖÃ
+    // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç°Î»ï¿½ï¿½
     int getPosition()
     {
         return position;
     }
 
-    // »ñÈ¡³µÁ¾×î´óËÙ¶È
+    // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½
     int getMaxSpeed()
     {
         return maxSpeed;
     }
 
-    // »ñÈ¡³µÁ¾¼ÓËÙ¶È
+    // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½
     int getAcceleration()
     {
         return acceleration;
     }
 
-    // »ñÈ¡³µÁ¾ÐÐÊ»·½Ïò
+    // ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê»ï¿½ï¿½ï¿½ï¿½
     std::string getDirection()
     {
         return direction;
     }
 
-    // ÅÐ¶Ï³µÁ¾ÊÇ·ñÍ£Ö¹
+    // ï¿½Ð¶Ï³ï¿½ï¿½ï¿½ï¿½Ç·ï¿½Í£Ö¹
     bool getIsStopped()
     {
         return isStopped;
     }
 
-    // ÉèÖÃ³µÁ¾ËÙ¶È
+    // ï¿½ï¿½ï¿½Ã³ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½
     void setSpeed(int newSpeed) 
     {
         if (newSpeed < 0) 
@@ -87,37 +87,37 @@ public:
         }
     }
 
-    // ÉèÖÃ³µÁ¾Î»ÖÃ
+    // ï¿½ï¿½ï¿½Ã³ï¿½ï¿½ï¿½Î»ï¿½ï¿½
     void setPosition(int newPosition) 
     {
         position = newPosition;
     }
 
-    // ÉèÖÃ³µÁ¾×î´óËÙ¶È
+    // ï¿½ï¿½ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½
     void setMaxSpeed(int newMaxSpeed) 
     {
         maxSpeed = newMaxSpeed;
     }
 
-    // ÉèÖÃ³µÁ¾¼ÓËÙ¶È
+    // ï¿½ï¿½ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ù¶ï¿½
     void setAcceleration(int newAcceleration) 
     {
         acceleration = newAcceleration;
     }
 
-    // ÉèÖÃ³µÁ¾ÐÐÊ»·½Ïò
+    // ï¿½ï¿½ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½Ê»ï¿½ï¿½ï¿½ï¿½
     void setDirection(const std::string& newDirection)
     {
         direction = newDirection;
     }
 
-    // ÉèÖÃ³µÁ¾ËùÔÚ³µµÀ
+    // ï¿½ï¿½ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú³ï¿½ï¿½ï¿½
     void setLane(int newLane)
     {
         lane = newLane;
     }
 
-    // ³µÁ¾¼ÓËÙ
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     void accelerate() 
     {
         if (!isStopped) 
@@ -126,26 +126,26 @@ public:
         }
     }
 
-    // ³µÁ¾¼õËÙ
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     void decelerate() 
     {
         setSpeed(speed - acceleration);
     }
 
-    // ³µÁ¾Í£Ö¹
+    // ï¿½ï¿½ï¿½ï¿½Í£Ö¹
     void stop() 
     {
         isStopped = true;
         speed = 0;
     }
 
-    // ³µÁ¾Æô¶¯
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
     void start() 
     {
         isStopped = false;
     }
 
-    // ³µÁ¾ÒÆ¶¯
+    // ï¿½ï¿½ï¿½ï¿½ï¿½Æ¶ï¿½
     void move() 
     {
         if (!isStopped) 
@@ -162,44 +162,44 @@ public:
     }
 };
 
-// ¶¨Òå½»Í¨ÐÅºÅµÆ×´Ì¬Ã¶¾Ù
+// ï¿½ï¿½ï¿½å½»Í¨ï¿½ÅºÅµï¿½×´Ì¬Ã¶ï¿½ï¿½
 enum class TrafficLightState {
-    GREEN,               // ÂÌµÆ
-    YELLOW,              // »ÆµÆ 
-    RED,                 // ºìµÆ
-    PEDESTRIAN_GREEN,    // ÐÐÈËÂÌµÆ
-    PEDESTRIAN_RED       // ÐÐÈËÐÅºÅµÆ´¦ÓÚºìµÆ×´Ì¬£¬ÒâÎ¶×ÅÐÐÈË´ËÊ±²»¿ÉÒÔÍ¨ÐÐ
+    GREEN,               // ï¿½Ìµï¿½
+    YELLOW,              // ï¿½Æµï¿½ 
+    RED,                 // ï¿½ï¿½ï¿½
+    PEDESTRIAN_GREEN,    // ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½
+    PEDESTRIAN_RED       // ï¿½ï¿½ï¿½ï¿½ï¿½ÅºÅµÆ´ï¿½ï¿½Úºï¿½ï¿½×´Ì¬ï¿½ï¿½ï¿½ï¿½Î¶ï¿½ï¿½ï¿½ï¿½ï¿½Ë´ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½
 };
 
-// ¶¨Òå½»Í¨ÐÅºÅµÆÀà
+// ï¿½ï¿½ï¿½å½»Í¨ï¿½ÅºÅµï¿½ï¿½ï¿½
 class TrafficLight
 {
 private:
-    int position;                // ÐÅºÅµÆÎ»ÖÃ
-    TrafficLightState state;     // ÐÅºÅµÆ×´Ì¬
-    int cycleDuration;           // ÐÅºÅµÆÖÜÆÚ
-    int currentTime;             // ÐÅºÅµÆµ±Ç°Ê±¼ä
-    int yellowDuration;          // »ÆµÆ³ÖÐøÊ±¼ä
-    bool hasPedestrianSignal;    // ÊÇ·ñÓÐÐÐÈËÐÅºÅ
+    int position;                // ï¿½ÅºÅµï¿½Î»ï¿½ï¿½
+    TrafficLightState state;     // ï¿½ÅºÅµï¿½×´Ì¬
+    int cycleDuration;           // ï¿½ÅºÅµï¿½ï¿½ï¿½ï¿½ï¿½
+    int currentTime;             // ï¿½ÅºÅµÆµï¿½Ç°Ê±ï¿½ï¿½
+    int yellowDuration;          // ï¿½ÆµÆ³ï¿½ï¿½ï¿½Ê±ï¿½ï¿½
+    bool hasPedestrianSignal;    // ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Åºï¿½
 public:
     TrafficLight(int pos, int duration, int yellowDur = 3, bool hasPed = false)
     {
         position=pos; 
-        state=TrafficLightState::RED;     // ³õÊ¼×´Ì¬ÎªºìµÆ
+        state=TrafficLightState::RED;     // ï¿½ï¿½Ê¼×´Ì¬Îªï¿½ï¿½ï¿½
         cycleDuration=duration;           
         currentTime=0; 
         yellowDuration=yellowDur; 
-        hasPedestrianSignal=hasPed;        // ÊÇ·ñÓÐÐÐÈËÐÅºÅ
+        hasPedestrianSignal=hasPed;        // ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Åºï¿½
     }
         
 
-    // ¸üÐÂÐÅºÅµÆ×´Ì¬
+    // ï¿½ï¿½ï¿½ï¿½ï¿½ÅºÅµï¿½×´Ì¬
     void update() 
     {
         currentTime++;
         switch (state)
         {
-            // ÂÌµÆ
+            // ï¿½Ìµï¿½
             case TrafficLightState::GREEN:
                 if (currentTime >= cycleDuration - yellowDuration) 
                 {
@@ -208,21 +208,21 @@ public:
                 }
                 break;
 
-            // »ÆµÆ
+            // ï¿½Æµï¿½
             case TrafficLightState::YELLOW:
                 if (currentTime >= yellowDuration) 
                 {
                     state = TrafficLightState::RED;
                     if (hasPedestrianSignal) 
                     {
-                        // ÐÐÈËÐÅºÅµÆ±äÂÌ
+                        // ï¿½ï¿½ï¿½ï¿½ï¿½ÅºÅµÆ±ï¿½ï¿½ï¿½
                         state = TrafficLightState::PEDESTRIAN_GREEN;
                     }
                     currentTime = 0;
                 }
                 break;
 
-            // ºìµÆ
+            // ï¿½ï¿½ï¿½
             case TrafficLightState::RED:
                 if (hasPedestrianSignal && state == TrafficLightState::PEDESTRIAN_GREEN) 
                 {
@@ -242,7 +242,7 @@ public:
                 }
                 break;
 
-            // ÐÐÈËÂÌµÆ
+            // ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½
             case TrafficLightState::PEDESTRIAN_GREEN:
                 if (currentTime >= cycleDuration) 
                 {
@@ -251,7 +251,7 @@ public:
                 }
                 break;
 
-            // ÐÐÈËÐÅºÅµÆ´¦ÓÚºìµÆ×´Ì¬£¬ÒâÎ¶×ÅÐÐÈË´ËÊ±²»¿ÉÒÔÍ¨ÐÐ
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ÅºÅµÆ´ï¿½ï¿½Úºï¿½ï¿½×´Ì¬ï¿½ï¿½ï¿½ï¿½Î¶ï¿½ï¿½ï¿½ï¿½ï¿½Ë´ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½
             case TrafficLightState::PEDESTRIAN_RED:
                 if (currentTime >= cycleDuration) 
                 {
@@ -261,50 +261,50 @@ public:
                 break;
         }
     }
-    // »ñÈ¡ÐÅºÅµÆ×´Ì¬
+    // ï¿½ï¿½È¡ï¿½ÅºÅµï¿½×´Ì¬
     TrafficLightState getState()  
     {
         return state;
     }
-    // »ñÈ¡ÐÅºÅµÆÎ»ÖÃ
+    // ï¿½ï¿½È¡ï¿½ÅºÅµï¿½Î»ï¿½ï¿½
     int getPosition() 
     {
         return position;
     }
-    // »ñÈ¡µ±Ç°µ¹¼ÆÊ±
+    // ï¿½ï¿½È¡ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½Ê±
     int getCountdown() 
     {
         switch (state) 
         {
-            // ÂÌµÆµ¹¼ÆÊ±
+            // ï¿½ÌµÆµï¿½ï¿½ï¿½Ê±
             case TrafficLightState::GREEN:            
                return cycleDuration - yellowDuration - currentTime;
 
-            // »ÆµÆµ¹¼ÆÊ±
+            // ï¿½ÆµÆµï¿½ï¿½ï¿½Ê±
             case TrafficLightState::YELLOW:
 
-            // ºìµÆµ¹¼ÆÊ±
+            // ï¿½ï¿½Æµï¿½ï¿½ï¿½Ê±
             case TrafficLightState::RED:
                 if (hasPedestrianSignal && state == TrafficLightState::PEDESTRIAN_GREEN) 
                 {
                     return cycleDuration - currentTime;
                 }
 
-            // ÐÐÈËÂÌµÆµ¹¼ÆÊ±
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ÌµÆµï¿½ï¿½ï¿½Ê±
             case TrafficLightState::PEDESTRIAN_GREEN:
                 return cycleDuration - currentTime;
 
-            // ÐÐÈËÐÅºÅµÆ´¦ÓÚºìµÆ×´Ì¬£¬ÒâÎ¶×ÅÐÐÈË´ËÊ±²»¿ÉÒÔÍ¨ÐÐ
+            // ï¿½ï¿½ï¿½ï¿½ï¿½ÅºÅµÆ´ï¿½ï¿½Úºï¿½ï¿½×´Ì¬ï¿½ï¿½ï¿½ï¿½Î¶ï¿½ï¿½ï¿½ï¿½ï¿½Ë´ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½
             case TrafficLightState::PEDESTRIAN_RED:
                 return cycleDuration - currentTime;
 
-            // ÆäËû×´Ì¬
+            // ï¿½ï¿½ï¿½ï¿½×´Ì¬
             default:
                 return 0;
         }
     }
 
-    // ÅÐ¶ÏÊÇ·ñÓÐÐÐÈËÐÅºÅµÆ
+    // ï¿½Ð¶ï¿½ï¿½Ç·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÅºÅµï¿½
     bool hasPedestrianLight() 
     {
         return hasPedestrianSignal;
@@ -329,7 +329,7 @@ public:
         for (auto& vehicle : vehicles) {
             vehicle.move();
             if (vehicle.getPosition() >= length) {
-                // ³µÁ¾Ê»³öµÀÂ·
+                // ï¿½ï¿½ï¿½ï¿½Ê»ï¿½ï¿½ï¿½ï¿½Â·
                 auto it = std::find_if(vehicles.begin(), vehicles.end(), [&](const Vehicle& v) {
                     return v.getId() == vehicle.getId();
                 });
